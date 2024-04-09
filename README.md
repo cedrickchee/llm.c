@@ -1,5 +1,14 @@
 # llm.c
 
+This is a fork. The plan:
+- Add support for other architectures
+- First, learn CUDA, again
+- Steal some ideas from https://github.com/jart/cosmopolitan
+- Rust port, automated using AI agent (Devin?) or prompt Claude for converting C to Rust (maybe)
+- Use a minimalist deep learning framework (maybe)
+
+---
+
 LLM training in simple, pure C/CUDA. There is no need for 245MB of PyTorch or 107MB of cPython. For example, training GPT-2 (CPU, fp32) is ~1,000 lines of clean code in a single file. It compiles and runs instantly, and exactly matches the PyTorch reference implementation. I chose GPT-2 as the first working example because it is the grand-daddy of LLMs, the first time the modern stack was put together.
 
 Currently, I am working on:
